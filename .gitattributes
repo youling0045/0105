@@ -51,9 +51,9 @@ print(result)
 class luggage(object):
     def luggage(self,a,b,c,d):
         return a,b,c,d
-luggageA = ("15kG","FROW TaoYuan","TO HongKong","李侑霖1")
-luggageB = ("5kG","FROW TaoYuan","TO Taichung","李侑霖2")
-luggageC = ("20kG","FROW TaoYuan","TO Tainan","李侑霖3")
+luggageA = ("15kG","FROW TaoYuan","TO HongKong","name:李侑霖")
+luggageB = ("5kG","FROW TaoYuan","TO Taichung","name:李侑霖2")
+luggageC = ("20kG","FROW TaoYuan","TO Tainan","name:李侑霖3")
 user_input = input("輸入想要查詢的行李: ")
 if user_input.upper() == 'A':
     print("luggageA")
@@ -64,3 +64,20 @@ elif user_input.upper() == 'B':
 else :
     print("luggageC")
     print(luggageC)
+
+class plantcard(object):
+    def plantcard(self,a,b,c,d,e,f,g):
+        return a,b,c,d,e,f,g
+plantcard1 = ("李侑霖","ID:123456","time:0700","Gate:10C","site:12D","luggage:2 pices",luggageA)
+plantcard2 = ("李侑霖2","ID:654321","time:0900","Gate:18C","site:20A","luggage:1 pices",luggageB)
+plantcard3 = ("李侑霖3","ID:162435","time:1100","Gate:23A","site:5C","luggage:1 pices",luggageC)
+user_input = input("輸入想要查詢的plantcard: ")
+if user_input.upper() == '1':
+    print("plantcard1")
+    print(plantcard1)
+elif user_input.upper() == '2':
+    print("plantcard2")
+    print(plantcard2)
+else :
+    print("plantcard3")
+    print(plantcard3)
