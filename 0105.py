@@ -1,0 +1,101 @@
+class 電費:
+    def __init__(self, 用戶, 度數, 費率):
+        self._用戶 = 用戶
+        self._度數 = 度數
+        self._費率 = 費率
+
+    def total_電費(self):
+        return self._度數 * self._費率
+
+帳單1 = 電費("1A", 300, 5)
+帳單2 = 電費("1B", 100, 5)
+帳單3 = 電費("1C", 500, 5)
+
+print(帳單1._用戶)
+print("電費",帳單1._度數*帳單1._費率)
+print(帳單2._用戶)
+print("電費",帳單2._度數*帳單2._費率)
+print(帳單3._用戶)
+print("電費",帳單3._度數*帳單3._費率)
+
+class bill:
+    def bill(self,a,b):
+        return a*b
+b=5
+bill1=("1A")
+a=300
+result1 = a*b 
+bill2=("1B")
+a=100
+result2 = a*b 
+bill3=("1C")
+a=500
+result3 = a*b 
+print("1A",result1)
+print("1B",result2)
+print("1C",result3)
+
+
+class D(object):
+    def 帳單(self,x,y):
+        return x*y
+obj1 = D()
+x=300
+y=5
+result = obj1.帳單(x,y) 
+print("1A 電費")
+print(result) 
+
+class D(object):
+    def 帳單(self,x,y):
+        return x*y
+obj1 = D()
+x=100
+y=5
+result = obj1.帳單(x,y) 
+print("1B 電費")
+print(result) 
+
+class D(object):
+    def 帳單(self,x,y):
+        return x*y
+obj1 = D()
+x=500
+y=5
+result = obj1.帳單(x,y) 
+print("1C 電費")
+print(result) 
+
+class luggage(object):
+    def luggage(self,a,b,c,d):
+        return a,b,c,d
+luggageA = ("15kG","FROW TaoYuan","TO HongKong","Name:李侑霖")
+luggageB = ("5kG","FROW TaoYuan","TO Taichung","Name:李侑霖2")
+luggageC = ("20kG","FROW TaoYuan","TO Tainan","Name:李侑霖3")
+user_input = input("輸入想要查詢的行李: ")
+if user_input.upper() == 'A':
+    print("luggageA")
+    print(luggageA )
+elif user_input.upper() == 'B':
+    print("luggageB")
+    print(luggageB)
+else :
+    print("luggageC")
+    print(luggageC)
+
+class plantcard(object):
+    def plantcard(self,a,b,c,d,e,f,g):
+        return a,b,c,d,e,f,g
+plantcard1 = ("李侑霖","ID:123456","time:0700","Gate:10C","Site:12D","luggage:2 pices",luggageA)
+plantcard2 = ("李侑霖2","ID:654321","time:0900","Gate:18C","Site:20A","luggage:1 pices",luggageB)
+plantcard3 = ("李侑霖3","ID:162435","time:1100","Gate:23A","Site:5C","luggage:1 pices",luggageC)
+user_input = input("輸入想要查詢的plantcard: ")
+if user_input.upper() == '1':
+    print("plantcard1")
+    print(plantcard1)
+elif user_input.upper() == '2':
+    print("plantcard2")
+    print(plantcard2)
+else :
+    print("plantcard3")
+    print(plantcard3)
